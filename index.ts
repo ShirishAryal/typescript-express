@@ -1,10 +1,12 @@
-import express, { Express, Response, Request, NextFunction } from "express"
-import * as http from "http"
 import { config } from "dotenv"
+import express, { Express, NextFunction, Request, Response } from "express"
+import * as http from "http"
 import nodemailer from "nodemailer"
 
 config()
-
+// Yeslai paxi rest garnum hai
+// ajai eklai rakhdim na ta
+// ajai arko pani method
 const PORT: string = process.env.PORT || "3000"
 const app: Express = express()
 
